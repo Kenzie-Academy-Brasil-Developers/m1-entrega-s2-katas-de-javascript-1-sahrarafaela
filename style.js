@@ -12,37 +12,44 @@ console.log(oneThroughTwenty())
 
 console.log("Contando números pares do 1 ao 20 em fileira:")
 function evensToTwenty() {
+    let paresDeUmAoVinte = []
     for (let i = 1; i <= 20; i++) {
+
         if ((i % 2) == 0) {
-            console.log(i)
+           paresDeUmAoVinte.push (i)
         }
     }
+    return paresDeUmAoVinte
 }
-evensToTwenty()
+console.log(evensToTwenty())
 
 
 console.log("Contando números ímpares do 1 ao 20 em fileira: ")
 function oddsToTwenty() {
+    let imparesUmAoVinte = []
     for (let i = 1; i <= 20; i++) {
         if ((i % 2) == 1) {
-            console.log(i)
+            imparesUmAoVinte.push(i)
         }
     }
+    return imparesUmAoVinte
 }
 
-oddsToTwenty()
+console.log(oddsToTwenty())
 
 
 console.log("Contando números múltiplos de 5 do 1 ao 100 em fileira: ")
 function multiplesOfFive() {
+    let multpiploDeCinco = []
     for (let i = 1; i <= 100; i++) {
         if ((i % 5) == 0) {
-            console.log(i)
+            multpiploDeCinco.push(i)
         }
     }
+    return multpiploDeCinco
 }
 
-multiplesOfFive()
+console.log (multiplesOfFive())
 
 
 console.log("Contando quadrados perfeitos do 1 ao  100: ")
